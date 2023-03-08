@@ -1,8 +1,10 @@
-import CreationalDP.Phone;
+import java.util.Arrays;
 
 public class main {
+
     public static void main(String[] args) {
-        Phone p = new Phone.Builder().setModel("Nokia").getPhone();
-        p.toString();
+        int a[] = { 2, 3, 4, 5 };
+        int[] b = a.clone();
+        System.out.println(Arrays.stream(b).max());
     }
 }
